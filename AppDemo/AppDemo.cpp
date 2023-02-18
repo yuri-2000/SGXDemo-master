@@ -3,6 +3,7 @@
 #include "sgx_urts.h"
 #include "EnclaveDemo_u.h"
 //#define ENCLAVE_FILE _T("../Debug/EnclaveDemo.signed.dll")
+
 #define ENCLAVE_FILE _T("EnclaveDemo.signed.dll")
 #define MAX_BUF_LEN 100
 int main() {
