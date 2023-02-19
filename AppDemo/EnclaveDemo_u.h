@@ -1,6 +1,8 @@
 #ifndef ENCLAVEDEMO_U_H__
 #define ENCLAVEDEMO_U_H__
 
+using namespace std;
+
 #include <stdint.h>
 #include <wchar.h>
 #include <stddef.h>

@@ -16,6 +16,9 @@
       <UniqueIdentifier>{34dfbe7d-3c22-45cd-95ac-7f11b4d69449}</UniqueIdentifier>
       <Extensions>rc;xml;pem;</Extensions>
     </Filter>
+    <Filter Include="Source Files\mbt">
+      <UniqueIdentifier>{8681400b-36d4-4f1b-8a62-ceb1cd862321}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(projectname)_t.c">
@@ -24,10 +27,55 @@
     <ClCompile Include="$(projectname).cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AuthenticationTree.cpp">
+      <Filter>Source Files\mbt</Filter>
+    </ClCompile>
+    <ClCompile Include="Crypto.cpp">
+      <Filter>Source Files\mbt</Filter>
+    </ClCompile>
+    <ClCompile Include="Driver.cpp">
+      <Filter>Source Files\mbt</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph.cpp">
+      <Filter>Source Files\mbt</Filter>
+    </ClCompile>
+    <ClCompile Include="MerkleBTree.cpp">
+      <Filter>Source Files\mbt</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeHeap.cpp">
+      <Filter>Source Files\mbt</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools.cpp">
+      <Filter>Source Files\mbt</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(projectname)_t.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AuthenticationTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Crypto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Edge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MerkleBTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeHeap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -44,5 +92,6 @@
     <None Include="EnclaveDemo_private.pem">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

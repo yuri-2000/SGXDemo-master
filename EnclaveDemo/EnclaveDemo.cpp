@@ -1,13 +1,32 @@
 #include "EnclaveDemo_t.h"
 
 #include "sgx_trts.h"
-#include<string.h>
+#include <sgx_exit>
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-void foo(char *buf, size_t len)
+
+/*
+ * printf:
+ *   Invokes OCALL to display the enclave buffer to the terminal.
+ */
+void printf(const char *fmt, ...)
 {
-	const char *secret = "hello enclave!";
-	if (len > strlen(secret))
-	{
-		memcpy(buf, secret, strlen(secret) + 1);
-	}
+	char buf[BUFSIZ] = { '\0' };
+	va_list ap;
+	va_start(ap, fmt);
+	vsnprintf(buf, BUFSIZ, fmt, ap);
+	va_end(ap);
+	ocall_print(buf);
+}
+
+void enclave_entry()
+{
+	// do something
+
+	exit(1);
+	exit
+
+	// do something else
 }
